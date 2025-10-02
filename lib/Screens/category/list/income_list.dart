@@ -6,18 +6,18 @@ class IncomeList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       itemBuilder: (ctx, index) {
         return ListTile(
           title: Text('Income $index'),
           trailing: IconButton(
             onPressed: () {},
-            icon: Icon(Icons.delete, color: Colors.red),
+            icon: const Icon(Icons.delete, color: Colors.red),
           ),
         );
       },
       separatorBuilder: (ctx, index) {
-        return Divider();
+        return const Divider();
       },
       itemCount: 30,
     );

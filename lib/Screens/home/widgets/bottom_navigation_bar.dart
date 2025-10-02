@@ -16,7 +16,7 @@ class MoneyManagerBottomNavigation extends StatelessWidget {
           onTap: (index) {
             ScreenHome.newIndexNotifier.value = index;
           },
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Transactions',

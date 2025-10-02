@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:money_manager_app/Screens/home/screen_home.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

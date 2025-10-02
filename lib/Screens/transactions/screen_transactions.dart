@@ -6,9 +6,9 @@ class ScreenTransactions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       itemBuilder: (ctx, index) {
-        return Card(
+        return const Card(
           child: ListTile(
             leading: CircleAvatar(
               radius: 38,
@@ -24,7 +24,7 @@ class ScreenTransactions extends StatelessWidget {
         );
       },
       separatorBuilder: (ctx, index) {
-        return SizedBox(height: 10);
+        return const SizedBox(height: 10);
       },
       itemCount: 30,
     );

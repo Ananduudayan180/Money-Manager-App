@@ -7,12 +7,12 @@ class ScreenHome extends StatelessWidget {
   ScreenHome({super.key});
 
   static ValueNotifier<int> newIndexNotifier = ValueNotifier(0);
-  final pages = [ScreenTransactions(), ScreenCategotry()];
+  final pages = [const ScreenTransactions(), const ScreenCategotry()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Money Manager',
           style: TextStyle(color: Colors.white, fontFamily: 'Montserrat'),
         ),
@@ -28,9 +28,9 @@ class ScreenHome extends StatelessWidget {
             print('ScreenCategory');
           }
         },
-        child: Icon(Icons.add, color: Colors.white),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
-      bottomNavigationBar: MoneyManagerBottomNavigation(),
+      bottomNavigationBar: const MoneyManagerBottomNavigation(),
       body: ValueListenableBuilder(
         valueListenable: newIndexNotifier,
         builder: (BuildContext context, int newIndex, child) {
